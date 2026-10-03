@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false)
+  const menu = ["Home", "Articles", "Videos", "Movies", "Shop"]
 
   return (
     <>
@@ -13,27 +14,14 @@ const Header = () => {
         <div className='container paddingSmall'>
           <nav>
             <ul className={navbar ? "navbar" : "flex"} onClick={() => setNavbar(false)}>
-              <li>
-                <Link to='/'>Home</Link>
-              </li>
-              <li>
-                <Link to='/culture'>Culture</Link>
-              </li>
-              <li>
-                <Link to='/politics'>Politics</Link>
-              </li>
-              <li>
-                <Link to='/memes'>Memes</Link>
-              </li>
-              <li>
-                <Link to='/sports'>Sports</Link>
-              </li>
-              <li>
-                <Link to='/boxed'>Boxed</Link>
-              </li>
-              <li>
-                <Link to='/reviews'>Reviews</Link>
-              </li>
+              {menu.map((item) => {
+                const route = item === "Home" ? "/" : `/${item.toLowerCase()}`
+                return (
+                  <li key={item}>
+                    <Link to={route}>{item}</Link>
+                  </li>
+                )
+              })}
             </ul>
             <button className='barIcon' onClick={() => setNavbar(!navbar)}>
               {navbar ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}

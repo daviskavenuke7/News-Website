@@ -30,3 +30,28 @@
   padding: 5px 0 0 20px;
   margin-top: 5px;
 }
+@media screen and (max-width: 768px) {
+  .popular .box {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .popular .images,
+  .popular .text {
+    width: 100%;
+  }
+  .popular .images {
+    height: auto;
+  }
+  .popular img {
+    height: 220px;
+  }
+  .popular .text h1 {
+    padding: 15px 15px 0;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .popular .date,
+  .popular .comment {
+    padding-left: 15px;
+  }
+}

@@ -1,0 +1,132 @@
+.category-page {
+  padding: 35px 0 50px;
+  min-height: 55vh;
+}
+
+.category-page-header {
+  margin-bottom: 25px;
+  border-bottom: 2px solid #fb4c35;
+}
+
+.category-page-header h1 {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 12px;
+}
+
+.article-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.article-card,
+.shop-card,
+.video-gallery-card {
+  min-width: 0;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.article-card img,
+.shop-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.article-card-copy {
+  padding: 18px;
+}
+
+.category-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 9px;
+  background: #fb4c35;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.article-card h2,
+.shop-card h2,
+.video-gallery-card h2 {
+  font-size: 19px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.article-card p {
+  margin-top: 10px;
+  color: #686868;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.shop-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.shop-card h2,
+.video-gallery-card h2 {
+  padding: 14px 16px 18px;
+}
+
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.video-gallery-card {
+  overflow: hidden;
+}
+
+.video-gallery-card video {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .category-page {
+    padding: 24px 0 35px;
+  }
+
+  .category-page-header h1 {
+    font-size: 25px;
+  }
+
+  .article-gallery,
+  .video-gallery {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .shop-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .article-card-copy {
+    padding: 15px;
+  }
+
+  .article-card h2,
+  .shop-card h2,
+  .video-gallery-card h2 {
+    font-size: 16px;
+  }
+
+  .shop-card h2 {
+    padding: 10px 11px 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .shop-gallery {
+    grid-template-columns: 1fr;
+  }
+}

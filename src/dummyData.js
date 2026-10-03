@@ -1,3 +1,24 @@
+export const mediaCategories = ["Articles", "Videos", "Movies", "Shop"]
+
+export const articleHighlights = [
+  { id: 1, title: "How design teams are building smarter stories" },
+  { id: 2, title: "The newsroom playbook for better publishing" },
+  { id: 3, title: "Measuring what readers actually care about" },
+]
+
+export const shopHighlights = [
+  { id: 1, title: "Weekend essentials for creators", cover: "../images/discover/d1.jpg" },
+  { id: 2, title: "Best picks from the editor desk", cover: "../images/discover/d4.jpg" },
+  { id: 3, title: "New arrivals for daily essentials", cover: "../images/discover/d6.jpg" },
+]
+
+export const mediaPlaylist = [
+  { id: 1, category: "Videos", title: "Behind the scenes studio reel", src: "https://www.w3schools.com/html/mov_bbb.mp4" },
+  { id: 2, category: "Videos", title: "City life in motion", src: "https://www.w3schools.com/html/movie.mp4" },
+  { id: 3, category: "Movies", title: "A perfect evening run", src: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" },
+  { id: 4, category: "Movies", title: "Late night stories", src: "https://www.w3schools.com/html/mov_bbb.mp4" },
+]
+
 export const hero = [
   {
     id: 1,

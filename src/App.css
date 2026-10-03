@@ -62,6 +62,14 @@ a {
 .images {
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 96%;
+  }
+  .row {
+    width: 100%;
+  }
+}
 .category1 {
   position: absolute;
   top: 0;

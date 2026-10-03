@@ -18,8 +18,20 @@
   font-size: 22px;
 }
 @media screen and (max-width: 768px) {
-  .music img,
-  .music .images {
-    height: 350px;
+  .music .box {
+    margin-left: 0;
+  }
+  .music .images,
+  .music img {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+  }
+  .music .text {
+    padding: 0 15px 10px;
+  }
+  .music h1 {
+    font-size: 18px;
+    line-height: 1.5;
   }
 }

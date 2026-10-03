@@ -21,4 +21,7 @@ main .container {
   .sideContent {
     width: 100%;
   }
+  main {
+    margin-top: 20px;
+  }
 }

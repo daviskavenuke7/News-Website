@@ -8,3 +8,15 @@
 .popularPost .text {
   padding: 20px;
 }
+@media screen and (max-width: 768px) {
+  .popularPost .box {
+    margin-right: 0;
+  }
+  .popularPost .text {
+    padding: 15px;
+  }
+  .popularPost .text .title {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}

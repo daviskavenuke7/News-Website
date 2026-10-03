@@ -26,7 +26,23 @@ header a {
   display: none;
   border: none;
 }
+.head .logo img {
+  max-width: 100%;
+  height: auto;
+}
 @media screen and (max-width: 768px) {
+  .head .container {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .head .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .head .logo img {
+    width: 220px;
+    max-width: 100%;
+  }
   .head .ad {
     display: none;
   }

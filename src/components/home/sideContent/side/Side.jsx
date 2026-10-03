@@ -2,7 +2,7 @@ import React from "react"
 import "./side.css"
 import Slider from "react-slick"
 import Heading from "../../../common/heading/Heading"
-import { gallery } from "../../../../dummyData"
+import { gallery, mediaCategories } from "../../../../dummyData"
 import Tpost from "../Tpost/Tpost"
 import SocialMedia from "../social/SocialMedia"
 
@@ -18,7 +18,7 @@ const Side = () => {
     slidesToScroll: 1,
   }
 
-  const catgeory = ["world", "travel", "sport", "fun", "health", "fashion", "business", "technology"]
+  const catgeory = mediaCategories
   return (
     <>
       <Heading title='Stay Connected' />
